@@ -2,7 +2,7 @@ module Dyalikeblags
   class Image < ActiveRecord::Base
 
   	before_destroy :delete_image_file
-  	validates :file_name, uniqueness: true
+  	validates :file_name, :name,  uniqueness: true
 
 
   	@@public_root = "public"

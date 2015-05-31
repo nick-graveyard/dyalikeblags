@@ -33,6 +33,7 @@ module Dyalikeblags
 
 		    #create new post
 		    @post = Dyalikeblags::Post.new( post_params() )
+		    @post.image = Dyalikeblags::Image.where(name: @post.image ).take.file_name
 		    
 		    #add image file name to new post
 		    
