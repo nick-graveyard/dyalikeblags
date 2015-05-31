@@ -1,7 +1,7 @@
 namespace :setup do
 
 	desc "gem installation"
-  	task :gems => :environment do
+  	task :dependencies => :environment do
   		puts 'install devise'
   		puts `rails g devise:install -f`
 			puts `rails g devise User -f`
