@@ -24,9 +24,10 @@
 ## To Implement
 1. Categories
 2. Pagination 
-3. Static pages on navbar
-4. User Management  
-5. if time_allows {:implement_testing} else {puts 'lol'}
+3. User Management  
+4. Comments
+5. Votable Comments
+4. if time_allows {:implement_testing} else {puts 'lol'}
 
 
 
