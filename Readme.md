@@ -21,10 +21,11 @@
 
 
 ## To Implement
-1. Pagination 
-2. Static pages on navbar
-3. User Management  
-4. if time_allows {:implement_testing}
+1. Categories
+2. Pagination 
+3. Static pages on navbar
+4. User Management  
+5. if time_allows {:implement_testing} else {puts 'lol'}
 
 
 
