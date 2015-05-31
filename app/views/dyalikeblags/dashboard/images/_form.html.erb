@@ -1,0 +1,35 @@
+<%= form_for [:dashboard, @image] do |f| %>
+  <% if @image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@image.errors.count, "error") %> prohibited this image from being saved:</h2>
+
+      <ul>
+      <% @image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+   <div class="form-group">
+    <div class="field">
+      <%= f.label "Display Name" %><br>
+      <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div>
+      <%= f.label :image %><br>
+      <%= f.file_field :image_file  %>
+    </div>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit class: "btn btn-default" %>
+  </div>
+<% end %>

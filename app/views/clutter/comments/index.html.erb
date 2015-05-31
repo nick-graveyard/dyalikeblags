@@ -1,0 +1,43 @@
+<h1>Listing comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th>User</th>
+      <th>Post</th>
+      <th>Cached votes total</th>
+      <th>Cached votes score</th>
+      <th>Cached votes up</th>
+      <th>Cached votes down</th>
+      <th>Cached weighted score</th>
+      <th>Cached weighted total</th>
+      <th>Cached weighted average</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td><%= comment.comment %></td>
+        <td><%= comment.user %></td>
+        <td><%= comment.post %></td>
+        <td><%= comment.cached_votes_total %></td>
+        <td><%= comment.cached_votes_score %></td>
+        <td><%= comment.cached_votes_up %></td>
+        <td><%= comment.cached_votes_down %></td>
+        <td><%= comment.cached_weighted_score %></td>
+        <td><%= comment.cached_weighted_total %></td>
+        <td><%= comment.cached_weighted_average %></td>
+        <td><%= link_to 'Show', comment %></td>
+        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Comment', new_comment_path %>

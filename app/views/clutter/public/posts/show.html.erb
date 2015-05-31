@@ -1,0 +1,36 @@
+      <div class="row  custom_index_row">
+
+      <div class="row">
+        <div class="col-md-12">
+        <h4>
+          <div style="text-decoration:underline">
+          <%=  @post.title %>
+          </div>
+
+            <%= @post.created_at.to_date %> 
+              By: <%= @post.user_id %> 
+        </h4>
+
+
+            
+
+        </div>
+      </div>
+        
+
+        <div class="row">
+        <div class="col-md-12">
+
+          <div><%= image_tag @post.image ,class: "img-rounded", style: "border:1px black solid; float:left; margin-right:20px",  width: '20%', height: 'auto' %>
+          </div>
+        
+          <div class ="custom_body_column">
+              <%=  simple_format(@post.content) %>
+          </div>
+        
+        </div>
+        </div>
+    
+
+      </div>
+<%#link_to 'Edit', edit_post_path(@post) %> 

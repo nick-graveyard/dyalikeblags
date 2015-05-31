@@ -1,0 +1,46 @@
+
+
+ <% @posts.each do |post| %>
+    
+      <div class="row  custom_index_row">
+
+
+
+                      <div class="row">
+                        <div class="col-md-12">
+                        <h4>
+                          <div style="text-decoration:underline">
+                            <%= link_to post.title, public_post_path(post), style: "" %>
+                          </div>
+
+                            <%= post.created_at.to_date %> 
+                              By: <%= post.user_id %> 
+                        </h4>
+
+
+                            
+
+                        </div>
+                      </div>
+        
+
+
+        <div class="row">
+            <div class="col-md-2">
+
+              <%= image_tag post.image ,class: "img-rounded", style: "border:1px black solid; float:left; margin-right:20px",  width: '100%', height: 'auto' %>
+              
+            </div>
+            <div class="col-md-10">
+              <div>
+                  <%= truncate( strip_tags(post.content), length: 500, escape: false) %>
+              </div>
+            </div>
+
+        </div>
+    
+
+      </div>
+<%#link_to 'Edit', edit_post_path(@post) %> 
+
+ <% end %>

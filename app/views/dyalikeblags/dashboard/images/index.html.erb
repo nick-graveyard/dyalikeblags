@@ -1,0 +1,51 @@
+<%# This page simply outputs 4 columns per row.  
+he modulus operator detects when to output a new row %>
+
+<% i = 0 
+  #change ref to chage the numbers of pics per per row, should be a factor of 12 due to to bootstrap columns needing
+  #to equal 12
+   ref = 6
+%> 
+
+ <% @images.each do |image| %>
+    
+
+      
+
+      <% if i % ref == 0 %>
+        <div class="row">
+      <% end %>
+
+
+        <div class="col-md-<%= 12 / ref %>">
+          <div>
+          <a href="<%= dashboard_image_path(image) %> "> 
+            <img src="<%= image.link_path %>" alt="to be implemented" class="img-responsive"> 
+          </a>
+          </div>
+
+          <div>
+          <%= image.name %>
+          </div>
+
+          <div>
+            <%= link_to 'Delete', dashboard_image_path(image), :confirm=>"Are you sure?",  :method => :delete %> 
+          </div>
+        </div>
+
+
+       <% if i % ref == ref - 1 %>
+          </div>
+        <% end %>
+
+
+    <% i += 1 %>
+
+ 
+      
+
+     
+    
+
+ <% end %>
+

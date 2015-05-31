@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @comment.comment %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @comment.user %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @comment.post %>
+</p>
+
+<p>
+  <strong>Cached votes total:</strong>
+  <%= @comment.cached_votes_total %>
+</p>
+
+<p>
+  <strong>Cached votes score:</strong>
+  <%= @comment.cached_votes_score %>
+</p>
+
+<p>
+  <strong>Cached votes up:</strong>
+  <%= @comment.cached_votes_up %>
+</p>
+
+<p>
+  <strong>Cached votes down:</strong>
+  <%= @comment.cached_votes_down %>
+</p>
+
+<p>
+  <strong>Cached weighted score:</strong>
+  <%= @comment.cached_weighted_score %>
+</p>
+
+<p>
+  <strong>Cached weighted total:</strong>
+  <%= @comment.cached_weighted_total %>
+</p>
+
+<p>
+  <strong>Cached weighted average:</strong>
+  <%= @comment.cached_weighted_average %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

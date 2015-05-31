@@ -1,0 +1,18 @@
+Dyalikeblags::Engine.routes.draw do
+
+  
+	root 'public/posts#index'
+
+  namespace :dashboard do
+    resources :posts
+    resources :static_pages
+    resources :images
+
+    end
+
+  namespace :public do
+    resources :posts
+  end
+
+
+end

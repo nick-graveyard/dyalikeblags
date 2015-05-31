@@ -1,0 +1,39 @@
+
+
+  <div class="row  custom_index_row">
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div style="text-decoration:underline">
+          post.title
+          <%# link_to post.title, dashboard_post_path(post) %>
+          </div>
+         
+        </div>
+      </div>
+        
+
+        <div class="row">
+          <div class="col-md-1"><%= image_tag post.image ,class: "img-thumbnail" %></div>
+          <div class="col-md-11 custom_body_column">
+         
+              <%= truncate simple_format(post.content), length: 390 %>
+           
+          </div>
+        </div>
+
+          <div class="row">
+           <div class="col-md-12">
+
+              <%= post.created_at.to_date %> <br/>
+              By User: <%= post.user_id %> 
+            </div> 
+          </div> 
+
+  </div>
+
+
+
+

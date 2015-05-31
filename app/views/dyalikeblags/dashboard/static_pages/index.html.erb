@@ -1,0 +1,26 @@
+
+ <% @static_pages.each do |static_page| %>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div style="text-decoration:underline">
+        <a href="<%= dashboard_static_page_path(static_page) %> "> <%= static_page.title_bar %> </a>
+      </div>
+    </div>
+  </div>
+    
+
+    <div class ="row" style="margin-bottom:20px">
+        <div class="col-md-12">
+          <%= link_to 'Edit', edit_dashboard_static_page_path(static_page)  %>  | 
+          <%= link_to 'Delete', dashboard_static_page_path(static_page), :confirm=>"Are you sure?",  :method => :delete %> 
+        </div>
+    </div>
+
+
+
+ <% end %>
+
+
+
+

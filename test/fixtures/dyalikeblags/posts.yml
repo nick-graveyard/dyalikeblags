@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  content: MyText
+  user_id: 
+  image: MyString
+  cached_votes_total: 1
+  cached_votes_score: 1
+  cached_votes_up: 1
+  cached_votes_down: 1
+  cached_weighted_score: 1
+  cached_weighted_total: 1
+  cached_weighted_average: 1.5
+
+two:
+  title: MyText
+  content: MyText
+  user_id: 
+  image: MyString
+  cached_votes_total: 1
+  cached_votes_score: 1
+  cached_votes_up: 1
+  cached_votes_down: 1
+  cached_weighted_score: 1
+  cached_weighted_total: 1
+  cached_weighted_average: 1.5

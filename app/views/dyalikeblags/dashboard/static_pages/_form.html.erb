@@ -1,0 +1,32 @@
+<%= form_for [:dashboard, @static_page] do |f| %>
+
+
+  <% if @static_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@static_page.errors.count, "error") %> prohibited this static_page from being saved:</h2>
+
+      <ul>
+      <% @static_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="form-group">
+    <%= f.label :title_bar %><br>
+    <%= f.text_field :title_bar, class: "form-control", rows: "1"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :static_content %><br>
+    <%= f.text_area :static_content, class: "form-control", rows: "15%"  %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: "btn btn-default"%>
+  </div>
+
+
+
+
+<% end %>

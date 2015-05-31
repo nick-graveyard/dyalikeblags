@@ -1,0 +1,49 @@
+<%# form_for(@article, url: article_path(@article), html: {method: "patch"}) %>
+<%# form_for [:admin, :management, @article] %>
+
+<%= form_for [:dashboard, @post] do |f| %>
+<div class="row">
+<div class= "col-md-12">
+ 
+
+
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <div class= "form-group">
+      <%= f.label :image %><br>
+      <%= f.select :image, options_for_select( @image_names) , class: "form-control" %>
+    </div>
+    <div class="form-group">
+    <%= f.label :title %><br>
+    <%= f.text_area :title, class: "form-control", rows: "1" %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :content %><br>
+    <%= f.text_area :content, class: "form-control", rows: "10%" %>
+    </div>
+
+    <div class="form-group">
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+
+
+
+    <%# f.file_field :image  %>
+    </div>
+
+    <%= f.submit class: "btn btn-default" %>
+
+
+</div>
+</div>
+<% end %>

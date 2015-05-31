@@ -1,0 +1,42 @@
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href=" <%= public_posts_path %> ">Transient Design</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+         <ul class="nav navbar-nav navbar-right">
+
+
+  					<% if user_signed_in? %>
+
+			            <li>
+			              <p class="navbar-text">Hello <%=current_user.email %> </p>
+			            </li>
+
+			            <li>
+			              <%= link_to "Dashboard", dashboard_posts_path, :method => :get %>
+			            </li>
+
+
+			            <li>
+			              <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
+			            </li>
+
+            <% else %>
+
+            <li>
+              		<%= link_to "Sign in", main_app.new_user_session_path, :method => :get %>
+            </li>
+
+
+            <% end %>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
