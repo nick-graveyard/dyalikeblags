@@ -13,7 +13,7 @@
 8. Thats IT!
 
 
-## Notes:
+## Notes
 * In any dashboard text field full html and bootstrap tags are available.
 * User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
 
@@ -22,7 +22,7 @@
 
 ## To Implement
 1. Pagination 
-2. Implement static pages
+2. Static pages on navbar
 3. User Management
 
 
