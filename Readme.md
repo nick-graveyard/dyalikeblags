@@ -1,4 +1,4 @@
-##H ow to use
+## How to use
 
 1. Copy repo to vendor/engines/dyalikeblags
 1. Mount in gemfile
@@ -10,12 +10,17 @@
 5. run bundle install from main app
 6. rake setup:dependencies
 7. rake dyalikeblags:install:migrations
+8. Thats IT!
+
+
+## Notes:
+* In any dashboard text field full html and bootstrap tags are available.
+* User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
 
 
 
 
-
-## To Do
+## To Implement
 1. Pagination 
 2. Implement static pages
 3. User Management
