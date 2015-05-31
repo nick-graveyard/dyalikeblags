@@ -16,7 +16,8 @@
 ## Notes
 * In any dashboard text field full html and bootstrap tags are available.
 * User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
-
+* If you delete all users, or no users are present,  yoursite.com/users/sign_in, will have an link to create a new user.  
+  * This only appears if User.count == 0, the rest of the time users are managed thru the dashboard.
 
 
 

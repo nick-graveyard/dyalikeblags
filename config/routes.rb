@@ -12,6 +12,7 @@ Dyalikeblags::Engine.routes.draw do
 
   namespace :public do
     resources :posts
+    resources :static_pages, only: [:show], param: :title_bar
   end
 
 

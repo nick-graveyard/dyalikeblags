@@ -6,9 +6,19 @@
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-center">
+
+        <% Dyalikeblags::StaticPage.all.each  do | page | %>
+          <li>
+              <%= link_to page.title_bar, public_static_page_path( page.title_bar ), :method => :get %>
+          </li>
+        
+        <% end %>
+        </ul>
+
+
          <ul class="nav navbar-nav navbar-right">
-
-
   					<% if user_signed_in? %>
 
 			            <li>
@@ -29,12 +39,10 @@
             <li>
               		<%= link_to "Sign in", main_app.new_user_session_path, :method => :get %>
             </li>
-
-
             <% end %>
-
-
           </ul>
+
+
 
         </div>
 
