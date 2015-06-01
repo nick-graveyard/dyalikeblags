@@ -17,7 +17,7 @@
 * In any dashboard text field full html and bootstrap tags are available.
 * User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
 * It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb .  There is a link that allows anyone to create an account.  
-*  remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %><br /> ```
+   *  remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %><br /> ```
 
 
 
