@@ -10,7 +10,9 @@
 5. run ```bundle install``` from main app
 6. ``` rake setup:dependencies```
 7. ```rake dyalikeblags:install:migrations```
-8. Thats IT!
+8. It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb . There is a link that allows anyone to create an account that is installed with default Devise views.
+	* remove or edit this: <%=link_to "Sign up", new_registration_path(resource_name) %><br />
+9. Thats IT!
 
 
 ## Notes
