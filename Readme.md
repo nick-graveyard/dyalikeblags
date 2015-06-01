@@ -8,7 +8,7 @@
 	* ```gem 'devise'````
 	* ```gem 'acts_as_votable'```
 5. run ```bundle install``` from main app
-6.``` rake setup:dependencies```
+6. ``` rake setup:dependencies```
 7. ```rake dyalikeblags:install:migrations```
 8. Thats IT!
 
