@@ -17,7 +17,6 @@
 
 ## Notes
 * In any dashboard text field full html and bootstrap tags are available.
-* 
 * User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
 
 
