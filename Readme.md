@@ -11,15 +11,14 @@
 6. ``` rake setup:dependencies```
 7. ```rake dyalikeblags:install:migrations```
 8. It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb . There is a link that allows anyone to create an account that is installed with default Devise views.
-	* remove or edit this: <%=link_to "Sign up", new_registration_path(resource_name) %><br />
+	* remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %>```
 9. Thats IT!
 
 
 ## Notes
 * In any dashboard text field full html and bootstrap tags are available.
+* 
 * User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
-* It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb .  There is a link that allows anyone to create an account.  
-   *  remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %><br /> ```
 
 
 
