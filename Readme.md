@@ -1,10 +1,11 @@
 ## How to use
 
 1. Copy repo to vendor/engines/dyalikeblags
-1. Mount in gemfile
+2. Add to /config/routes.rb
 	* ```mount Dyalikeblags::Engine => "/your-preferred-url-root"```
-2. Add gem dependencies to main app Gemfile
+3. Add gem to /Gemfile
 	* ````gem 'dyalikeblags', path: "vendor/engines/dyalikeblags"```
+4. Add gem dependencies to /Gemfile
 	* ```gem 'devise'````
 	* ```gem 'acts_as_votable'```
 5. run ```bundle install``` from main app
@@ -12,7 +13,13 @@
 7. ```rake dyalikeblags:install:migrations```
 8. It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb . There is a link that allows anyone to create an account that is installed with default Devise views.
 	* remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %>```
-9. Thats IT!
+9. ``` rake db:migrate ```
+10. Thats IT!  
+
+
+### Usage
+1. Access the blog from /your-preferred-url-root
+2. Access the dashboard from /your-preferred-url-root/dashboard/posts
 
 
 ## Notes
