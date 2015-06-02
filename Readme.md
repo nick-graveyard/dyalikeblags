@@ -24,17 +24,15 @@
 
 ## Notes
 * In any dashboard text field full html and bootstrap tags are available.
-* User management not implemented yet so have to figure out how to add a user via devise views, will take a second of hacking.
 
 
 
 ## To Implement
 1. Categories
 2. Pagination 
-3. User Management  
-4. Comments
-5. Votable Comments
-4. if time_allows {:implement_testing} else {puts 'lol'}
+3. Comments
+4. Votable Comments
+5. if time_allows {:implement_testing} else {puts 'lol'}
 
 
 
