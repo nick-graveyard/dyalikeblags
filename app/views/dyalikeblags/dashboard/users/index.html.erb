@@ -3,7 +3,8 @@
 
   <% @users.each do |user| %>
 
-  
+<div style="margin-bottom:20px">
+
 <div>
  <%= link_to user.email, dashboard_user_path(user.id) %> 
 </div>
@@ -13,7 +14,12 @@ id: <%= user.id %>
 <div>
  username: <%= user.username %>
 </div>
+<div>
+<%= link_to "Edit", edit_dashboard_user_path(user) %> |
+<%= link_to "Delete", dashboard_user_path(user), :confirm=>"Are you sure?",  :method => :delete  %>
 
+</div>
+</div>
 
 
   <% end %>
