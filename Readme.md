@@ -8,9 +8,9 @@
 4. Add gem dependencies to /Gemfile
 	* ```gem 'devise'````
 	* ```gem 'acts_as_votable'```
-5. run ```bundle install``` from main app
-6. ``` rake setup:dependencies```
-7. ```rake dyalikeblags:install:migrations```
+5. run ```bundle install``` from main app directory
+6. ``` rake setup:dependencies``` from main app directory
+7. ```rake dyalikeblags:install:migrations``` from main app directory
 8. It is VERY IMPORTANT you edit /app/views/devise/shared/_links.html.erb . There is a link that allows anyone to create an account that is installed with default Devise views.
 	* remove or edit this: ``` <%=link_to "Sign up", new_registration_path(resource_name) %>```
 9. ``` rake db:migrate ```
