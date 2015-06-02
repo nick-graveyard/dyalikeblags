@@ -32,7 +32,8 @@
 2. Pagination or perma scroll or sideways tray?
 3. Comments
 4. Votable Comments
-5. if time_allows {:implement_testing} else {puts 'lol'}
+5. Search
+6. if time_allows {:implement_testing} else {puts 'lol'}
 
 
 
