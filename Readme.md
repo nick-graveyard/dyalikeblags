@@ -34,6 +34,7 @@
 4. Votable Comments
 5. Search
 6. Declarative Authorization and user roles/permissions
+7. Bring code up to rubocop standards
 6. if time_allows {:implement_testing} else {puts 'lol'}
 
 
