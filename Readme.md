@@ -33,6 +33,7 @@
 3. Comments
 4. Votable Comments
 5. Search
+6. Declarative Authorization and user roles/permissions
 6. if time_allows {:implement_testing} else {puts 'lol'}
 
 
