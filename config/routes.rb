@@ -7,7 +7,7 @@ Dyalikeblags::Engine.routes.draw do
     resources :posts
     resources :static_pages
     resources :images
-
+    resources :users
     end
 
   namespace :public do
