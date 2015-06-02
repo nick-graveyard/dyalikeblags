@@ -29,7 +29,7 @@
 
 ## To Implement
 1. Categories
-2. Pagination 
+2. Pagination or perma scroll or sideways tray?
 3. Comments
 4. Votable Comments
 5. if time_allows {:implement_testing} else {puts 'lol'}
