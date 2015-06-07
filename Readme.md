@@ -1,11 +1,11 @@
 ## How to use
 
 1. Copy repo to vendor/engines/dyalikeblags
-2. Add to /config/routes.rb
+2. Add to main app /config/routes.rb
 	* ```mount Dyalikeblags::Engine => "/your-preferred-url-root"```
-3. Add gem to /Gemfile
+3. Add gem to main app /Gemfile
 	* ````gem 'dyalikeblags', path: "vendor/engines/dyalikeblags"```
-4. Add gem dependencies to /Gemfile
+4. Add external gem dependencies to main app /Gemfile
 	* ```gem 'devise'````
 	* ```gem 'acts_as_votable'```
 5. run ```bundle install``` from main app directory
