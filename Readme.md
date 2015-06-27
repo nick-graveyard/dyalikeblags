@@ -35,6 +35,7 @@
 5. Search
 6. Declarative Authorization and user roles/permissions
 7. Bring code up to rubocop standards
+8. Make install process easier.
 6. if time_allows {:implement_testing} else {puts 'lol'}
 
 
