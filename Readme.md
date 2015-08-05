@@ -28,6 +28,8 @@
 
 
 ## To Implement
+1. super easy installation with a generator:
+-http://multithreaded.stitchfix.com/blog/2014/01/06/rails-app-templates/
 1. Categories
 2. Pagination or perma scroll or sideways tray?
 3. Comments
