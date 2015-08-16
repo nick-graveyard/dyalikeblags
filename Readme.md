@@ -1,5 +1,5 @@
-## How to use (adding a generator for this at some point.)
-
+## How to use 
+*(adding a generator to simplify this at some point.)
 1. Copy repo to vendor/engines/dyalikeblags
 2. Add to main app /config/routes.rb
 	* ```mount Dyalikeblags::Engine => "/your-preferred-url-root"```
