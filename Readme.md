@@ -20,7 +20,7 @@
 4. delete any table from database with dyalikeblags namespace
 
 
-### Usage
+## Usage
 1. Access the blog from /blog
 2. Access the dashboard from /blog/dashboard/posts
 
