@@ -24,6 +24,7 @@
 2. delete gem from gemfile
 3. delete mountpoint from /config/routes.rb
 4. delete any table from database with dyalikeblags namespace
+5. Note: to uninstall devise see: https://github.com/plataformatec/devise
 
 
 ## Usage
