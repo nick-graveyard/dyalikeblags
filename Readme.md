@@ -1,4 +1,4 @@
-## How To tutorial
+## How To Install tutorial
 1. Install plataformatec's devise 
 	* https://github.com/plataformatec/devise
 	* Note: required to use default table name of User!!!
@@ -11,6 +11,14 @@
 	* can change /blog to your preferred path
 5. rake db:migrate
 	* all migrations should come from within the gem engine
+	* all migrations are namespaced with dyalikeblags
+	
+## How To Uninstall tutorial
+1. remove repo
+2. delete gem from gemfile
+3. delete mountpoint from /config/routes.rb
+4. delete any table from database with dyalikeblags namespace
+
 
 ### Usage
 1. Access the blog from /blog
