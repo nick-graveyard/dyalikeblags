@@ -1,7 +1,7 @@
 ## How To Install tutorial
 1. Install plataformatec's devise 
 	* https://github.com/plataformatec/devise
-	* Note: required to use default table name of User!!!
+	* Note: this gem requires use of devises default table name:  "User" !!!
 2. Copy repo to application
 3. Add gem to Gemfile
 	* ````gem 'dyalikeblags', path: "path/to/dyalikeblags"```
@@ -28,8 +28,7 @@
 * In any dashboard text field full html and bootstrap tags are available.
 
 ## To Do
-1. Simplify installation using a generator:
--http://multithreaded.stitchfix.com/blog/2014/01/06/rails-app-templates/
+
 1. Categories
 2. Pagination or perma scroll or sideways tray?
 3. Comments
@@ -39,6 +38,7 @@
 7. Bring code up to rubocop standards
 8. Make install process easier.
 6. if time_allows {:implement_testing} else {puts 'lol'}
+7. Allow use of different devise table names beyond the default of User
 
 
 
