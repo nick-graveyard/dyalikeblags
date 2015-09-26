@@ -2,11 +2,17 @@
 1. Install plataformatec's devise 
 	* https://github.com/plataformatec/devise
 	* Note: this gem requires use of devises default table name:  "User" !!!
-2. Copy repo to application
-3. Add gem to Gemfile
+	* gem 'devise'
+	* rails generate devise:install
+	* rails generate devise:views
+	* rails generate devise User
+	* rake db:migrate
+	* (set a home root to: "home#index" in /config/routes.rb)
+2. Copy dyalikeblags repo to application
+3. Add dyalikeblags gem to Gemfile
 	* ````gem 'dyalikeblags', path: "path/to/dyalikeblags"```
 	* bundle install
-4. Add mountpoint to /config/routes.rb
+4. Add dyalikeblags mountpoint to /config/routes.rb
 	* mount Dyalikeblags::Engine => "/blog"
 	* can change /blog to your preferred path
 5. rake db:migrate
